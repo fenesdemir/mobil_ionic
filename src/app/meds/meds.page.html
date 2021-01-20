@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Meds</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<app-meds-detail [med] = "selectedMed"></app-meds-detail>
+
+  <ion-card>
+    <ion-item *ngFor = "let med of meds" (click)="onSelect(med)">
+      <ion-icon icon="wifi" slot="start"></ion-icon>
+      <ion-label>{{med.name}}</ion-label>
+    </ion-item>
+  </ion-card>
+
+</ion-content>

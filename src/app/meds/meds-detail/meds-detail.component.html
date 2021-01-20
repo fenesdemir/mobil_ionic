@@ -1,0 +1,44 @@
+<div *ngIf="med">
+
+  <h2>{{med.name | uppercase}} Details</h2>
+  <div><span>Id: </span>{{med.id}}</div>
+  <div>
+    <label>Name:
+      <input [(ngModel)]="med.name" placeholder="name"/>
+    </label>
+  </div>
+
+  <div>
+    <label>Hungry/Full:
+      <input [(ngModel)]="med.hungryFull" placeholder="hungryFull"/>
+    </label>
+  </div>
+
+  <div>
+    <label>How Many Times a Day:
+      <input [(ngModel)]="med.howManyTimesDay" placeholder="howManyTimesDay"/>
+    </label>
+  </div>
+
+  <div>
+    <label>Dosage:
+      <input [(ngModel)]="med.dosage" placeholder="dosage"/>
+    </label>
+  </div>
+
+  <div>
+    <label>Pill/Syrup/Injection:
+      <input [(ngModel)]="med.pillSyrupInj" placeholder="pillSyrupInj"/>
+    </label>
+  </div>
+
+  <div>
+    <label>Frequency:
+      <input [(ngModel)]="med.frequency" placeholder="frequency"/>
+    </label>
+  </div>
+
+</div>
+
+      
+      
